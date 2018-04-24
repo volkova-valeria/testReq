@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<button (click)='getBitcoin()'>Request</button>
+<div [hidden]='search'>
+  Идет запрос!!!
+</div>
+<div *ngIf='bitCoin'>
+  {{bitCoin | json}}
+</div>
+
